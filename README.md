@@ -1,2 +1,2 @@
 # LP2
-fica com deus aí
+repositório para os códigos da disciplina de lp2
