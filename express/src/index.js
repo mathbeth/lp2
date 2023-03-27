@@ -19,6 +19,8 @@ server.get('/hello/en', (req, res) => {
   const result = {
     message: `Hello, ${name}!`,
   }
+
+  res.json(result)
 });
 
 server.listen(3000, () => {
