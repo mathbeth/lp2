@@ -13,6 +13,14 @@ server.get('/ola', (req, res) => {
   res.send('Olá, Mundo');
 });
 
+server.get('/hello/en', (req, res) => {
+  const name = req.query.name;
+
+  const result = {
+    message: `Hello, ${name}!`,
+  }
+});
+
 server.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
