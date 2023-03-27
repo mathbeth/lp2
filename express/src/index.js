@@ -18,9 +18,39 @@ server.get('/hello/en', (req, res) => {
 
   const result = {
     message: `Hello, ${name}!`,
-  }
+  };
 
-  res.json(result)
+  res.json(result);
+});
+
+server.get('/hello/pt/:name', (req, res) => {
+  const name = req.params.name;
+
+  const result = {
+    message: `Olá, ${name}!`,
+  };
+
+  res.json(result);
+});
+
+server.get('/hello/pt/:name', (req, res) => {
+  const name = req.params.name;
+
+  const result = {
+    message: `Olá, ${name}!`,
+  };
+
+  res.json(result);
+});
+
+server.post('/hello/es', (req, res) => {
+  const name = req.body.name;
+
+  const result = {
+    message: `¡Hola, ${name}!`,
+  };
+
+  res.json(result);
 });
 
 server.listen(3000, () => {
